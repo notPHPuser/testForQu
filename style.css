@@ -14,7 +14,7 @@ body {
 .container {
   width: 1170px;
   background-color: #a6c9ff;
-  height: 120vh;
+  height: 140vh;
 }
 
 .header {
@@ -237,4 +237,38 @@ body {
   position: relative;
   width: 100%;
   top: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.h2_text_second {
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: left;
+}
+
+.something {
+  width: 1120px;
+  height: 248px;
+  position: relative;
+  background-color: #d4ff5a;
+  left: 25px;
+  top: 118px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+  box-sizing: border-box;
+}
+
+.something_five {
+  width: 198px;
+  height: 198px;
+  background-color: #497957;
+  border-radius: 35px;
+  border: 2px solid #00ff4a;
 }
