@@ -14,7 +14,7 @@ body {
 .container {
   width: 1170px;
   background-color: #a6c9ff;
-  height: 140vh;
+  height: 160vh;
 }
 
 .header {
@@ -117,6 +117,7 @@ body {
   font-weight: 400;
   line-height: 28.13px;
   text-align: left;
+  box-shadow: 2px 5px 10px 0 #497957;
 }
 
 .h1_text {
@@ -271,4 +272,71 @@ body {
   background-color: #497957;
   border-radius: 35px;
   border: 2px solid #00ff4a;
+}
+
+.div_for_textUTP {
+  position: relative;
+  width: 100%;
+  top: 150px;
+  display: flex;
+  justify-content: center;
+}
+
+.textUTP {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  color: #f3f3f3;
+}
+
+.open_popup_second {
+  background-color: #ff4b4b;
+  width: 262px;
+  height: 58px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  color: #ffffff;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28.13px;
+  text-align: left;
+}
+
+.div_for_second_pop {
+  position: relative;
+  top: 160px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  position: relative;
+  top: 200px;
+  width: 100%;
+  height: 100px;
+  background-color: #d87ff6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div_for_text_footer {
+  display: flex;
+  width: 745px;
+  justify-content: space-between;
+}
+
+.footer_text {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  color: #ffffff;
 }
