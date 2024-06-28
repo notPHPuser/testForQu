@@ -340,3 +340,34 @@ body {
   text-align: left;
   color: #ffffff;
 }
+#popup {
+  position: relative;
+  width: 451px;
+  left: 0px;
+  top: -1318px;
+}
+
+.popup-content {
+  width: 451px;
+  height: 500px;
+  background-color: #a6c9ff;
+}
+
+.for_popup {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 297px;
+  justify-content: space-between;
+  top: 33px;
+  left: 64.5px;
+}
+
+.text_popup {
+  font-family: Roboto;
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 45px;
+  text-align: left;
+  color: #ffffff;
+}

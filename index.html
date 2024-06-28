@@ -25,7 +25,13 @@
         <div class="arror_one"></div>
         <div class="text_main">
           <h1 class="h1_text">H1 text</h1>
-          <button class="open_popup"><span>Open pop-up button</span></button>
+          <button
+            onclick="document.getElementById('popup').style.display = 'block'"
+            id="open_popup"
+            class="open_popup"
+          >
+            <span>Open pop-up button</span>
+          </button>
         </div>
       </main>
       <div class="forH2">
@@ -51,7 +57,7 @@
         <p class="textUTP">Text utp</p>
       </div>
       <div class="div_for_second_pop">
-        <button class="open_popup_second"><span>Open pop-up button</span></button>
+        <button id="open_popup" class="open_popup_second"><span>Open pop-up button</span></button>
       </div>
       <footer class="footer">
         <div class="div_for_text_footer">
@@ -61,6 +67,20 @@
           <p class="footer_text">Text</p>
         </div>
       </footer>
+      <div id="popup" style="display: none">
+        <div class="popup-content">
+          <div class="for_popup">
+            <div class="text_popup">Text</div>
+            <div class="text_popup">Text</div>
+            <div class="text_popup">Text</div>
+            <div class="text_popup">Text</div>
+            <button id="open_popup" class="open_popup_second">
+              <span>Open pop-up button</span>
+            </button>
+          </div>
+          <button onclick="document.getElementById('popup').style.display = 'none'">Close</button>
+        </div>
+      </div>
     </div>
   </body>
 </html>
