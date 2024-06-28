@@ -14,22 +14,47 @@
           <p class="text_menu text_menu_one">Text</p>
           <p class="text_menu text_menu_one">Text</p>
         </div>
-        <div class="burger_menu">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
+        <div onclick="toggleMenu()" class="burger_menu">
+          <div class="bar first"></div>
+          <div class="bar second"></div>
+          <div class="bar third"></div>
+          <div class="close_bar rotate-45" style="display: none"></div>
+          <div class="close_bar rotate-minus-45" style="display: none"></div>
         </div>
+        <script>
+          function toggleMenu() {
+            var burgerMenu = document.querySelector('.first');
+            var burgerMenu2 = document.querySelector('.second');
+            var burgerMenu3 = document.querySelector('.third');
+            var closeBar45 = document.querySelector('.close_bar.rotate-45');
+            var closeBarMinus45 = document.querySelector('.close_bar.rotate-minus-45');
+            var openPopup = document.getElementById('popup');
+
+            burgerMenu.style.display = 'none';
+            burgerMenu2.style.display = 'none';
+            burgerMenu3.style.display = 'none';
+            closeBar45.style.display = 'block';
+            closeBarMinus45.style.display = 'block';
+            openPopup.style.display = 'block';
+          }
+
+          function openPopup() {
+            var openPopupp = document.getElementById('.true_popup');
+            openPopupp.style.display = 'block';
+          }
+
+          function closeMenu() {
+            var closePopupp = document.getElementById('.true_popup');
+            closePopupp.style.display = 'none';
+          }
+        </script>
       </header>
       <main class="main">
         <!-- нужно доделать стрелки -->
         <div class="arror_one"></div>
         <div class="text_main">
           <h1 class="h1_text">H1 text</h1>
-          <button
-            onclick="document.getElementById('popup').style.display = 'block'"
-            id="open_popup"
-            class="open_popup"
-          >
+          <button onclick="openPopup()" id="open_popup" class="open_popup">
             <span>Open pop-up button</span>
           </button>
         </div>
@@ -57,7 +82,9 @@
         <p class="textUTP">Text utp</p>
       </div>
       <div class="div_for_second_pop">
-        <button id="open_popup" class="open_popup_second"><span>Open pop-up button</span></button>
+        <button onclick="openPopup()" id="open_popup" class="open_popup_third">
+          <span>Open pop-up button</span>
+        </button>
       </div>
       <footer class="footer">
         <div class="div_for_text_footer">
@@ -74,12 +101,17 @@
             <div class="text_popup">Text</div>
             <div class="text_popup">Text</div>
             <div class="text_popup">Text</div>
-            <button id="open_popup" class="open_popup_second">
+            <button onclick="openPopup()" id="open_popup" class="open_popup_second">
               <span>Open pop-up button</span>
             </button>
           </div>
-          <button onclick="document.getElementById('popup').style.display = 'none'">Close</button>
+
+          <!-- <button class="close_burger" onclick="closeMenu()">Close</button> -->
         </div>
+      </div>
+      <div class="true_popup">
+        <p class="text_popup_true">Pop-up</p>
+        <button class="close_popup_true">X</button>
       </div>
     </div>
   </body>
